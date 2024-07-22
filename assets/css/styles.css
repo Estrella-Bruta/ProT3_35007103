@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*head_view*/
+body {
+    background: linear-gradient( #12372a,#436850);
+    height: 100%;
+    width: 100%;
+}
+
+header { 
+    width: 80%;
+    height: 45vh;
+    background-size: cover;
+    background-image: url(http://localhost/ProT3_35007103/assets/img/plantas-pequenas.jpg);
+    background-attachment: fixed;
+    opacity: #2e2c2c01;
+}
+
+h1.text-header{
+    text-transform: uppercase;
+    font-weight: 800;
+    background: transparent;
+    color: #ffff;
+    text-shadow: 4px 5px 6px #31312c;
+    font-size: 70px;
+    text-align: center;
+}
+
+/*navbar_view*/
+nav.navbar {
+    border-bottom: 8px solid #c4c7c698;
+
+}
+.navbar-nav {
+    bottom: 0;
+    position: sticky;
+    cursor: pointer;
+    padding-right: 7px;
+}
+
+a.nav-link{
+
+    font-weight: 300;
+    font-size: 22px;
+    margin: auto;
+    box-sizing: content-box;
+    position: sticky;
+}
+
+a.nav-link:hover{
+    background-color: #adbc9f;
+    border-radius: 20px;
+    color: #393636;
+}
+
+button {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+/*Principal_ultimo*/
+section.section {
+    padding: 3rem;
+}
+
+div.tex-present>p{
+    font-weight: 500;
+    font-size: 25px;
+    padding: 20px;
+    color: #050505;
+    text-align: justify;
+    text-shadow: 0 1px 1px #e0e5d63b;
+}
+
+/*quienes_somos*/
+
+.Presentacion {
+    padding: 30px;
+    margin: 20px;
+    background-color: #e0e5d63b;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px #12372a;
+    text-align: center;
+}
+.card-title{
+    padding: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.card-text{
+    padding: 4px;
+    text-align: justify;
+    font-size: larger;
+}
+.card-img-top {
+    padding: 6px;
+    background-color: #3936369d;
+    border-radius: 50%;
+}
+
+/*Acerca de*/
+.tex-acercade{
+    font-weight: 300;
+    font-size: 25px;
+    padding: 4px;
+    margin: 10px 0 20px 0 ;
+}
+
+/*Registro*//*Login*/
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    text-shadow:2px 3px 4px  #ffff;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.form-registro {
+    padding: 20px;
+    margin: 40px 0 60px 0;
+    min-width: 800px;
+    border-radius: 20px;
+    background-color: #4947477b;
+    border-left: 6px solid #0e0d0d93;
+    align-content: center;
+    max-height: 100vh;
+    box-shadow: 2px 3px 4px #393636bb;
+}
+
+.form-login {
+    max-width: 800px;
+    padding: 30px;
+    min-width: 500px;
+    margin: 40px 0 60px 0;
+    border-radius: 20px;
+    background-color: #4947477b;
+    border-left: 6px solid #0e0d0d93;
+    align-content: center;
+    max-height: 100vh;
+    box-shadow: 2px 3px 4px #393636bb;
+}
+
+label.form-label {
+    padding: 15px 0 0 0;
+    font-size: x-large;
+    background: transparent;
+    border-bottom: 3px solid #4d4a4a;
+    color: #080a0bda; 
+}
+
+input.form-control {
+    background-color: transparent;
+    border:1px solid #393636c2;
+}
+
+div.buttons {
+    padding: 8px 0 8px 0;
+    margin: 10px 0 10px 0;
+    font-size: medium;
+}
+
+div.dropdown {
+    padding: 0;
+
+}
+
+/*footer*/
+
+footer {
+    padding: 8px;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    color: #adbc9f;
+}
+
+div>p.pie_pag {
+    padding: 10px;
+    font-weight: 100;
+    font-size: 19px;
+    font-family: Helvetica;
+    color: #fbfada;
+}
