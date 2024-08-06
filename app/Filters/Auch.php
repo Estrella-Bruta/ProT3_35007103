@@ -1,7 +1,6 @@
 <?php 
 namespace App\filters;
 
-use CodeIgniter\Autoloader\FileLocatorInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Filters\FilterInterface;

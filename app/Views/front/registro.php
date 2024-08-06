@@ -18,16 +18,16 @@
 
             <div><?=session()->getFlashdata('seccess');?></div>
 
-    <label for="inputNombre"  class="form-label">Nombre</label>
-    <input class="form-control" type="text" name="nombre" placeholder="Nombre" required minlength="3" aria-label="default input example">
+        <label for="inputNombre"  class="form-label">Nombre</label>
+        <input class="form-control" type="text" name="nombre" placeholder="Nombre" required minlength="3" aria-label="default input example">
     
-    <!--Error--> 
-    <?php if($validation->getError('nombre'))?>
-    <div class="alert alert-dark"> <?=$error = $validation->getError('nombre');?></div>
+        <!--Error--> 
+        <?php if($validation->getError('nombre'))?>
+        <div class="alert alert-dark"> <?=$error = $validation->getError('nombre');?></div>
     <?=csrf_field();?>
-    <label for="inputApellido"  class="form-label">Apellido</label>
-    <input class="form-control" type="text" name="apellido" placeholder="Apellido" required minlength="3" aria-label="default input example">
-    
+        <label for="inputApellido"  class="form-label">Apellido</label>
+        <input class="form-control" type="text" name="apellido" placeholder="Apellido" required minlength="3" aria-label="default input example">
+        
     <!--Error--> 
     <?php if($validation->getError('apellido'))?>
     <div class="alert alert-dark"> <?=$error = $validation->getError('apellido');?></div>

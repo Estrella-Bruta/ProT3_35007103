@@ -28,7 +28,7 @@ in APPPATH\Controllers\login_Controller.php on line 22.
 CRITICAL - 2024-07-22 02:25:56 --> ParseError: syntax error, unexpected token "protected", expecting "," or ";"
 [Method: POST, Route: enviarlogin]
 in APPPATH\Models\usuario_Model.php on line 8.
- 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ProT3_35007103\\app\\Models\\usuario_Model.php')
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\\\app\\Models\\usuario_Model.php')
  2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\usuario_Model')
  3 APPPATH\Controllers\login_Controller.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\usuario_Model')
  4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login_Controller->auth()
@@ -41,7 +41,7 @@ CRITICAL - 2024-07-22 02:41:42 --> Error: Class "Config\BaseFilters" not found
 [Method: GET, Route: login]
 in APPPATH\Config\Filters.php on line 16.
  1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
- 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ProT3_35007103\\app\\Config\\Filters.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\\\app\\Config\\Filters.php')
  3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
  4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
  5 SYSTEMPATH\Config\Factories.php(297): class_exists('Config\\Filters')
@@ -62,7 +62,7 @@ CRITICAL - 2024-07-22 02:41:52 --> Error: Class "Config\BaseFilters" not found
 [Method: GET, Route: registro]
 in APPPATH\Config\Filters.php on line 16.
  1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
- 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ProT3_35007103\\app\\Config\\Filters.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\\\app\\Config\\Filters.php')
  3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
  4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
  5 SYSTEMPATH\Config\Factories.php(297): class_exists('Config\\Filters')
@@ -83,7 +83,7 @@ CRITICAL - 2024-07-22 02:42:03 --> Error: Class "Config\BaseFilters" not found
 [Method: GET, Route: registro]
 in APPPATH\Config\Filters.php on line 16.
  1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
- 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ProT3_35007103\\app\\Config\\Filters.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\\\app\\Config\\Filters.php')
  3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
  4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
  5 SYSTEMPATH\Config\Factories.php(297): class_exists('Config\\Filters')

@@ -14,13 +14,13 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-CI_ENVIRONMENT = development;
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
 
-app.baseURL = 'http://localhost/primer-proyecto'
+app.baseURL = 'http://localhost/ProRT3_35007103'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
@@ -31,7 +31,7 @@ app.baseURL = 'http://localhost/primer-proyecto'
 #--------------------------------------------------------------------
 
 # database.default.hostname = localhost
-# database.default.database = ci4
+database.default.database = diaz_rominam
 # database.default.username = root
 # database.default.password = root
 # database.default.DBDriver = MySQLi

@@ -15,7 +15,7 @@ header {
     width: 80%;
     height: 45vh;
     background-size: cover;
-    background-image: url(http://localhost/ProT3_35007103/assets/img/plantas-pequenas.jpg);
+    background-image: url(http://localhost/ProRT3_35007103/assets/img/plantas-pequenas.jpg);
     background-attachment: fixed;
     opacity: #2e2c2c01;
 }
@@ -128,7 +128,6 @@ h2 {
     background-color: #4947477b;
     border-left: 6px solid #0e0d0d93;
     align-content: center;
-    max-height: 100vh;
     box-shadow: 2px 3px 4px #393636bb;
 }
 

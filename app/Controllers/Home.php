@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data['titulo']='pagina principal';
+        $data['titulo']='principal_ultimo';
         echo view('front/head_view',$data);
         echo view('front/navbar_view');
         echo view('front/principal_ultimo');
@@ -62,4 +62,3 @@ class Home extends BaseController
     }
 
 }
-?>

@@ -3,13 +3,13 @@ namespace app\Controllers;
 Use app\Models\usuario_Model;
 use CodeIgniter\Controller;
 
-class usuario_controllers extends Controller{
+class usuario_controllers extends BaseController
+{
 
-    public function __construct(){
+    public function create()
+    {
         helper(['form', 'url']);
-    }
-
-    public function create() {
+    
         $data['titulo']='registro';
         echo view('front/head_view',$data);
         echo view('front/nav_view');
@@ -22,31 +22,31 @@ class usuario_controllers extends Controller{
             'nombre' => 'required|min_length[3]',
             'apellido' => 'required|min_length[3] |max_length[25]',
             'usuario' => 'required|min_length[3]',
-            'email' => 'required|min_length[4] |max_length[100] |valid_email|is_unique[usuarios.mail]',
-            'password' => 'required|min_length[3] |max_length[10]',
-            'confirmar' => 'required|min_length[3] |max_length[10]'
-        ],);
-    
-        $formModel = new usuario_Model();
+            'email' => 'required|valid_email',
+            'password' => 'required|min_length[7]',
+            'confirmar' => 'required|min_length[7]'
+        ]);
 
         if (!$input) {
             $data['titulo'] ='registro';
             echo view('front/head_view', $data);
-            echo view('front/nav_view');
+            echo view('front/navbar_view');
             echo view('Back/usuario/registro', ['validation' => $this->validator]);
             echo view('front/footer_view');
 
         } else {
-            $formModel->save([
+            $model = new usuario_Model();
+            $data = [
                 'nombre' => $this->request->getVar('nombre'),
                 'apellido' => $this->request->getVar('apellido'),
                 'usuario' => $this->request->getVar('usuario'),
                 'email' => $this->request->getVar('email'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
-            ]);
-
-            session()->setFlashdata('success', 'usuario registrado con exito');
-            return $this->response->redirect('/login');
+            ];
+            
+            $model->save($data);
+            session()->setFlashdata('msg', 'usuario registrado con exito');
+            return redirect()->to('/login');
         }
     }
 }
